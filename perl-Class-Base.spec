@@ -17,7 +17,6 @@ Source:         http://www.cpan.org/modules/by-module/%{modprefix}/%{module}-%{v
 BuildRequires:  perl-devel
 %endif
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module implements a simple base class from which other modules
