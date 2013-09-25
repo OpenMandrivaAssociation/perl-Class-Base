@@ -1,15 +1,15 @@
 %define upstream_name  Class-Base
-%define upstream_version 0.03
+%define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Useful base class for deriving other modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Class/Class-Base-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -62,4 +62,5 @@ make test
 
 * Sun Aug 06 2006 Scott Karns <scottk@mandriva.org> 0.03-1mdv2007.0
 - Initial Mandriva package
+
 
