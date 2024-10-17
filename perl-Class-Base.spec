@@ -8,7 +8,7 @@ Release:	3
 Summary:	Useful base class for deriving other modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Class/Class-Base-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
