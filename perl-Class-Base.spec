@@ -1,15 +1,15 @@
 %define upstream_name  Class-Base
-%define upstream_version 0.05
+%define upstream_version 0.09
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Useful base class for deriving other modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Class/Class-Base-%{upstream_version}.tar.gz
+Url:		https://github.com/yanick/Class-Base
+Source0:	https://cpan.metacpan.org/authors/id/Y/YA/YANICK/Class-Base-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
