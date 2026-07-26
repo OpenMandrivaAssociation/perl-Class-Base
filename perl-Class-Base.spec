@@ -1,15 +1,13 @@
 %define upstream_name  Class-Base
-%define upstream_version 0.09
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.09
+Release:	2
 
 Summary:	Useful base class for deriving other modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/yanick/Class-Base
-Source0:	https://cpan.metacpan.org/authors/id/Y/YA/YANICK/Class-Base-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/Y/YA/YANICK/Class-Base-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ can be derived, thereby inheriting a number of useful methods such as
 new(), init(), params(), clone(), error() and debug().
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +44,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2011.0
 + Revision: 406314
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.03-4mdv2009.0
+- rebuild using %0.09 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.03-4mdv2009.0
 + Revision: 241173
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
